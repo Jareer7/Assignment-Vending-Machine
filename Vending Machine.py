@@ -2,18 +2,18 @@ class VendingMachine:
     def __init__(self):
         # Initialize products with names, prices, stock levels, and categories
         self.products = {
-            '1': {'name': 'Biscuits', 'price': 1.50, 'stock': 6, 'category': 'snacks'},
-            '2': {'name': 'Chips', 'price': 1.25, 'stock': 10, 'category': 'snacks'},
-            '3': {'name': 'Chocolate', 'price': 1.75, 'stock': 4, 'category': 'snacks'},
-            '4': {'name': 'Candy', 'price': 0.75, 'stock': 8, 'category': 'snacks'},
-            '5': {'name': 'Coke', 'price': 1.50, 'stock': 6, 'category': 'cold drinks'},
-            '6': {'name': 'Water', 'price': 1.00, 'stock': 5, 'category': 'cold drinks'},
-            '7': {'name': 'Coffee', 'price': 2.00, 'stock': 3, 'category': 'hot drinks'},
-            '8': {'name': 'Tea', 'price': 1.50, 'stock': 5, 'category': 'hot drinks'},
-            '9': {'name': 'Orange Juice', 'price': 2.50, 'stock': 4, 'category': 'fresh juices'},
-            '10': {'name': 'Apple Juice', 'price': 2.50, 'stock': 4, 'category': 'fresh juices'},
-            '11': {'name': 'Lemonade', 'price': 1.25, 'stock': 4, 'category': 'cold drinks'},
-            '12': {'name': 'Hot Chocolate', 'price': 2.50, 'stock': 4, 'category': 'hot drinks'}
+            '1': {'name': 'Biscuits🍪', 'price': 1.50, 'stock': 6, 'category': 'snacks'},
+            '2': {'name': 'Chips🥔', 'price': 1.25, 'stock': 10, 'category': 'snacks'},
+            '3': {'name': 'Chocolate🍫', 'price': 1.75, 'stock': 4, 'category': 'snacks'},
+            '4': {'name': 'Candy🍭', 'price': 0.75, 'stock': 8, 'category': 'snacks'},
+            '5': {'name': 'Coke🥤', 'price': 1.50, 'stock': 6, 'category': 'cold drinks'},
+            '6': {'name': 'Water💧', 'price': 1.00, 'stock': 5, 'category': 'cold drinks'},
+            '7': {'name': 'Lemonade🍋', 'price': 1.25, 'stock': 4, 'category': 'cold drinks'},
+            '8': {'name': 'Hot Chocolate☕', 'price': 2.50, 'stock': 4, 'category': 'hot drinks'},
+            '9': {'name': 'Coffee☕', 'price': 2.00, 'stock': 3, 'category': 'hot drinks'},
+            '10': {'name': 'Tea🍵', 'price': 1.50, 'stock': 5, 'category': 'hot drinks'},
+            '11': {'name': 'Orange Juice🍹', 'price': 2.50, 'stock': 4, 'category': 'fresh juices'},
+            '12': {'name': 'Apple Juice🧃', 'price': 2.50, 'stock': 4, 'category': 'fresh juices'},
         }
         
         # Suggestions for each product
