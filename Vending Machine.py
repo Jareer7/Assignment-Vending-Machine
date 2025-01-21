@@ -86,16 +86,19 @@ class VendingMachine:
             return 0  # No change for card or mobile payment
 
     def vend_product(self, code):
+        # Retrieve the product by code
         product = self.products[code]
+         # Check stock availability
         if product['stock'] > 0:
-            change = self.process_payment(product)
-            product['stock'] -= 1
+            change = self.process_payment(product) # Process payment
+            product['stock'] -= 1 # Decrease stock
             print(f"Dispensing {product['name']}. Change returned: £{change:.2f}")
-            self.suggest_products(code)
+            self.suggest_products(code) # Suggest related products
         else:
             print("Sorry, this product is out of stock.")
 
     def suggest_products(self, code):
+         # Get and display product suggestions
         suggestions = self.suggestions.get(code, [])
         if suggestions:
             print("You might also like:")
@@ -104,13 +107,14 @@ class VendingMachine:
                 print(f"- {suggested_product['name']} (£{suggested_product['price']})")
 
     def run(self):
-        self.display_menu()
+        self.display_menu()  # Show the menu
         while True:
-            code = self.get_user_input()
-            self.vend_product(code)
+            code = self.get_user_input() # Get user input
+            self.vend_product(code) # Vend the selected product
             if input("Do you want to purchase another item? (yes/no): ").strip().lower() != 'yes':
-                print("Thank you for using our vending machine!")
+                print("Thank you for using our vending machine!") # Exit message
                 break
+
 
 # Create an instance of the vending machine and run it
 vending_machine = VendingMachine()
